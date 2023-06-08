@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="examModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="başvuru">
+    <Key>
+      <PropertyRef Name="Başvuru_İD" />
+    </Key>
+    <Property Name="Başvuru_İD" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SOYAD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ceb_telefon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dogum_Tarihi" Type="DateTime" Precision="3" />
+    <Property Name="Cinsiyet" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Uyruk" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="calisma" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Engelli_Durumu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Egitim_Durumu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Egitim_seviye" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ToplamYıl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="herhangi_yerde_calismak" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="İs_tecrube_girmek" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pozisyon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="examEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="başvuru" EntityType="Self.başvuru" />
+  </EntityContainer>
+</Schema>

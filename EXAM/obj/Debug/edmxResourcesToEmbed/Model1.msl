@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="examModelStoreContainer" CdmEntityContainer="examEntities">
+    <EntitySetMapping Name="başvuru">
+      <EntityTypeMapping TypeName="examModel.başvuru">
+        <MappingFragment StoreEntitySet="başvuru">
+          <ScalarProperty Name="Başvuru_İD" ColumnName="Başvuru_İD" />
+          <ScalarProperty Name="AD" ColumnName="AD" />
+          <ScalarProperty Name="SOYAD" ColumnName="SOYAD" />
+          <ScalarProperty Name="ceb_telefon" ColumnName="ceb telefon" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Dogum_Tarihi" ColumnName="Dogum_Tarihi" />
+          <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+          <ScalarProperty Name="Uyruk" ColumnName="Uyruk" />
+          <ScalarProperty Name="calisma" ColumnName="calisma" />
+          <ScalarProperty Name="Engelli_Durumu" ColumnName="Engelli_Durumu" />
+          <ScalarProperty Name="Egitim_Durumu" ColumnName="Egitim_Durumu" />
+          <ScalarProperty Name="Egitim_seviye" ColumnName="Egitim_seviye" />
+          <ScalarProperty Name="ToplamYıl" ColumnName="ToplamYıl" />
+          <ScalarProperty Name="herhangi_yerde_calismak" ColumnName="herhangi_yerde_calismak" />
+          <ScalarProperty Name="İs_tecrube_girmek" ColumnName="İs_tecrube_girmek" />
+          <ScalarProperty Name="pozisyon" ColumnName="pozisyon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
